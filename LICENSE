@@ -1,13 +1,3 @@
-This is a utility project, which allows conversion between the
-NVM and the OpenMVG file format.
-
-It was developed with the use of the NVM file utility source code provided by
-Changchang Wu, therefore we also keep the original license.
-The original source code can be found at:
-https://github.com/cdcseacave/openMVS/tree/master/apps/InterfaceVisualSFM
-
-
-
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
