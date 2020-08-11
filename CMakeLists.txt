@@ -23,7 +23,7 @@ find_package(Eigen3 QUIET)
 #endif()
 
 find_package(OpenMVG REQUIRED)
-find_package(OSG 3.5.6 REQUIRED)
+find_package(OpenSceneGraph 3.5.6 REQUIRED)
 find_package(OpenThreads REQUIRED)
 
 find_package(OpenMP)
