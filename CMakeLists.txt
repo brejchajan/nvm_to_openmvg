@@ -2,6 +2,17 @@
 
 project(nvm_to_openmvg)
 
+MACRO(register_definitions DEF)
+  add_definitions(${DEF})
+  string(REPLACE "-D" "" STRIPPED_DEF ${DEF})
+  list(APPEND OpenMVG_DEFINITIONS ${STRIPPED_DEF})
+ENDMACRO()
+
+if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  message("clang detected: using std::unordered_map for Hash_Map")
+  register_definitions(-DOPENMVG_STD_UNORDERED_MAP)
+endif()
+
 set(NVM_TO_OPENMVG_SOURCES
     nvm_to_openmv/nvm_to_openmvg.cpp
     nvm_to_openmv/ioutil.cpp)
